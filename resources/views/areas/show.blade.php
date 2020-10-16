@@ -28,8 +28,20 @@
 
 		<div>
 			<h2 class="text-3xl p-4">{{$group_a[0]['Group']}}</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>
+							
+						</th>
+						<th class="">
+							<span>Games</span>
+						</th>
+					</tr>
+				</thead>
+			</table>
 			@foreach ($group_a as $team)
-					{{$team['Name']}} <br>
+					<div class="border-b">{{$team['Name']}}</div> <br>
 			@endforeach
 		</div>
 	</div>
